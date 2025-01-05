@@ -100,7 +100,7 @@ body {
 .option-list {
   position: relative;
   top: 120px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .menu-item {
@@ -120,6 +120,7 @@ body {
 .menu-item img {
   width: 38px;
   height: auto;
+  margin-left: 4%;
 }
 
 .menu-item:nth-child(5),
@@ -127,8 +128,29 @@ body {
   top: 100px;
 }
 
-.menu-item:nth-child(6) img {
+.menu-item:nth-child(5) img {
   width: 37px;
+}
+
+.menu-item-dashboard {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-dashboard h5 {
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+}
+
+.menu-item-dashboard img {
+  width: 38px;
+  height: auto;
+  margin-left: 4%;
 }
 
 .right-container {

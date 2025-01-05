@@ -1,0 +1,317 @@
+:root {
+  --bg-color: #053c54;
+  --main-color: #f45c2c;
+  --secondary: #e4d41c;
+  --tertiary: #7c4c44;
+  --white: #efefef;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--lib);
+}
+
+body {
+  background-color: var(--white);
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-panel {
+  float: left;
+  background-color: var(--bg-color);
+  max-width: 200px;
+  color: var(--white);
+}
+
+.right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  color: #303030;
+  height: 100vh;
+  width: calc(100% - 200px);
+  float: right;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  padding-left: 5px;
+}
+
+.lib {
+  position: relative;
+  left: 8px;
+}
+
+.lib h2 {
+  font-size: 18px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 60px;
+  padding-left: 6px;
+  cursor: pointer;
+}
+
+.photo {
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.username {
+  left: 10px;
+  position: relative;
+}
+
+#profile-photo {
+  width: 45px;
+  height: auto;
+}
+
+.username p {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.option-list {
+  position: relative;
+  top: 120px;
+  /* padding-left: 10px; */
+}
+
+.menu-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+}
+
+.menu-item h5 {
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+}
+
+.menu-item img {
+  width: 38px;
+  height: auto;
+  margin-left: 4%;
+}
+
+.menu-item:nth-child(5),
+.menu-item:nth-child(6) {
+  top: 100px;
+}
+
+.menu-item:nth-child(5) img {
+  width: 37px;
+}
+
+.menu-item-books {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-books h5 {
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+}
+
+.menu-item-books img {
+  width: 38px;
+  height: auto;
+  margin-left: 4%;
+}
+
+.right-panel {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.right-container {
+  /* width: 95%; */
+  height: 95%;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.right-container_1 {
+  /* display: flex; Change to flex to arrange items horizontally */
+  position: relative;
+  top: -250px;
+  left: -95px;
+  /* align-items: flex-start; Aligns items to the top */
+  width: 100%; /* Occupies full width */
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: #F6F7FB;
+}
+
+.search-bar button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+  border: none;
+  border-right: none;
+  cursor: pointer;
+  background: #F6F7FB;
+}
+
+.right-container_2 {
+  /* display: flex; Change to flex to arrange items horizontally */
+  position: relative;
+  top: -100px;
+  /* left: -495px; */
+  /* align-items: flex-start; Aligns items to the top */
+  width: 200%; /* Occupies full width */
+}
+
+.issued {
+  width: 100%;
+  /* margin-right: 40px; Adds space between borrowed and recommended */
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.head a {
+  color: var(--main-color);
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse; /* Merges borders for a cleaner look */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.book-table thead {
+  background-color: #e0e0e0; /* Use your theme color */
+  color: #303030; /* Text color for header */
+}
+
+.book-table th,
+.book-table td {
+  padding: 8px;
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Adds a border below each cell */
+}
+
+.book-table tbody tr:hover {
+  background-color: #f1f1f1; /* Changes background color on hover */
+}
+
+.action-btn {
+  padding: 5px 10px;
+  background-color: #3cc941; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds button corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-item {
+  min-width: 48%;
+  padding: 10px;
+  background-color: #e6e6e6;
+  display: flex;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.book-info {
+  position: relative;
+  left: 10px;
+}
+
+.book-image img {
+  border-radius: 8px;
+  height: 90px;
+  width: auto;
+}
+
+.book-info p {
+  font-size: 12px;
+  height: 20px;
+}
+
+.book-info span {
+  font-weight: bold;
+}
+
+.book-info button {
+  padding: 3px 8px;
+}
+
+.right-container_3 {
+  display: flex;
+}
+
+.right-container_3 {
+  display: flex; /* Change to flex to arrange items horizontally */
+  position: relative;
+  top: 50px;
+  align-items: flex-start; /* Aligns items to the top */
+  width: 100%; /* Occupies full width */
+}
+
+
