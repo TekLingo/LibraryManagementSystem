@@ -120,6 +120,7 @@ body {
 .menu-item img {
 	width: 38px;
 	height: auto;
+	margin-left: 4%;
 }
 
 .menu-item:nth-child(5),
